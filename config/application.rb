@@ -18,5 +18,10 @@ module RailsGemCoderaySample
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # rails_autolink を有効にするための設定
+    config.to_prepare do
+      # ActionView::Base.include(Rails::Autolink)
+    end
   end
 end
